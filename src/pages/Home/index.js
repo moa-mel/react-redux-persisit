@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import {signOut} from '../../redux/slices/userSlice'
 import './styles.css'
+import nft from './nft.jpg';
 
 function Home() {
 
@@ -12,19 +13,31 @@ function Home() {
   }
 
   return (
-      <div className='center'>
-        <div className='profile'>
-          <h1>Profile</h1>
-          <p>
+    <div  className='overlay' >
+    <div
+      className='modalContainer'
+    >
+      <img src={nft} alt='/' />
+      <div className='modalRight'>
+        <p className='closeBtn' >
+          X
+        </p>
+        <div className='content'>
+        <p>
             <strong>Name: </strong>{user?.name}
           </p>
           <p>
-            <strong>Email: </strong>
-            {`${user?.email}`}
+            <strong>Email: </strong> {`${user?.email}`}
           </p>
-          <span onClick={handleSignOut}>Sign Out</span>
+        </div>
+        <div className='btnContainer'>
+        <button className='btnPrimary'>
+        <span onClick={handleSignOut}>Sign Out</span>
+        </button>
         </div>
       </div>
+    </div>
+  </div>
   )
 }
 

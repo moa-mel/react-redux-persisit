@@ -2,6 +2,7 @@ import {useState} from 'react'
 import './styles.css'
 import {useDispatch} from 'react-redux'
 import {signIn} from '../../redux/slices/userSlice'
+import welcomeimg from "./welcomeback.svg"
 
 function Login(){
 
@@ -16,9 +17,9 @@ function Login(){
   }
 
   return(
-    <div className='center'>
-      <div className='signin'>
-        <h1>Sign In</h1>
+    <div className='main-login'>
+    <div className="login-contain">
+     <div className="left-side">
         <form onSubmit={signin} name='signin_form'>
         <input 
           type='text'
@@ -34,10 +35,20 @@ function Login(){
             placeholder="Enter your email"
             onChange={e => setEmail(e.target.value)}/>
 
-          <button type='submit'>Sign in</button>
+            <button type="submit" id="sub_butt">Login</button>
         </form>
       </div>
+      <div className="right-side">
+      <div className="welcomeNote">
+          <h3>Welcome Back!</h3>
+      </div>
+      <div className="welcomeImg">
+          <img src={welcomeimg} id='wel-img-id' alt=""  />
+      </div>
     </div>
+
+  </div>
+</div>
   )
 }
 
