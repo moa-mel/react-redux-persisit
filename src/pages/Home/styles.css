@@ -1,12 +1,3 @@
-.modalButton {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  padding: 12px 24px;
-}
-
 
 /* Modal */
 .overlay {
@@ -15,7 +6,7 @@
  /* box-shadow: 5px 10px #888888; */
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .modalContainer {
@@ -44,35 +35,28 @@ img {
   width: 100%;
 }
 
-.closeBtn {
-  position: fixed;
-  top: 8px;
-  right: 8px;
-}
-
 .content {
   display: flex;
   flex-direction: column;
-  column-gap: 2px;
+  column-gap: 4px;
   justify-content: center;
   text-align: center;
-  margin-top: 3rem; 
+  margin-top: 1.5rem; 
   padding: 1rem 2rem;
 }
 
 .btnContainer {
   display: flex;
   padding: 1rem 1rem;
-}
+} 
 .btnContainer button {
-  width: 50%;
-  margin: .5rem;
-  padding: 16px 0;
+  width: 30%;
+  /*margin: .5rem; */
+  padding: 14px 0;
   /* border: none; */
   border: 1px solid #411b57;
   /* color: #ffffff; */
-  align-items: center;
-  margin: 4rem auto;
+  margin: 25px auto; 
 }
 
 .btnPrimary {
@@ -85,7 +69,6 @@ img {
   background-color: white;
   color: #411b57;
 }
-
 .bold {
   font-weight: 800;
 }

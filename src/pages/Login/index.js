@@ -7,13 +7,13 @@ import welcomeimg from "./welcomeback.svg"
 function Login(){
 
   const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const dispatch = useDispatch()
 
   const signin = e => {
     e.preventDefault()
-    dispatch(signIn({name, email}))
+    dispatch(signIn({name, password}))
   }
 
   return(
@@ -25,17 +25,19 @@ function Login(){
           type='text'
           value={name}
           required
-          placeholder="Enter your name"
+          placeholder="Enter your username"
           onChange={e => setName(e.target.value)}/>
 
           <input 
-            type='email'
-            value={email}
+            type='password'
+            value={password}
             required
-            placeholder="Enter your email"
-            onChange={e => setEmail(e.target.value)}/>
+            placeholder="Enter your password"
+            onChange={e => setPassword(e.target.value)}/>
 
-            <button type="submit" className="sub_butt">Login</button>
+            <button type="submit" className="sub_butt">
+            <span>Login </span>
+            </button>
         </form>
       </div>
       <div className="right-side">

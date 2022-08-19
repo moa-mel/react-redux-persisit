@@ -19,16 +19,12 @@ function Home() {
     >
       <img src={nft} alt='/' />
       <div className='modalRight'>
-        <p className='closeBtn' >
-          X
-        </p>
         <div className='content'>
         <p>
-            <strong>Name: </strong>{user?.name} 👽
-          </p>
-          <p>
-            <strong>Email: </strong> {`${user?.email}`}
-          </p>
+            Hi {user?.name} 👽
+            <br />
+            Kindly, check back later
+          </p> 
         </div>
         <div className='btnContainer'>
         <button className='btnPrimary'>
