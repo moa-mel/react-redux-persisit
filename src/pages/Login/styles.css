@@ -58,6 +58,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          align-items: center;
+          margin: 4rem auto;
 }
 
 .main-login .login-contain .left-side .img-class {
@@ -74,7 +76,7 @@
   display: block;
   border: none;
   height: 2rem;
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-bottom: 1.5rem;
   padding: 0.2rem 1rem;
@@ -105,19 +107,24 @@
   margin-bottom: 0.5rem;
 }
 
-.main-login .login-contain .left-side #sub_butt {
+/*.main-login .login-contain .left-side*/  button {
   width: 50%;
   background: #4dd6b6;
   color: white;
   border: none;
-  margin: 4rem auto;
+  padding-left: -15px;
+  align-items: center;
+  margin: auto;
+ /* align-items: center;
+ justify-content: center; */
   cursor: pointer;
   padding: 0.5rem 1rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.main-login .login-contain .left-side #sub_butt:hover {
+
+.main-login .login-contain .left-side .sub_butt:hover {
   -webkit-box-shadow: 4px 3px 9px -1px gray;
           box-shadow: 4px 3px 9px -1px gray;
   -webkit-transform: translateY(-5px);

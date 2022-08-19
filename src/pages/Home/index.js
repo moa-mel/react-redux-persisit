@@ -24,7 +24,7 @@ function Home() {
         </p>
         <div className='content'>
         <p>
-            <strong>Name: </strong>{user?.name}
+            <strong>Name: </strong>{user?.name} 👽
           </p>
           <p>
             <strong>Email: </strong> {`${user?.email}`}

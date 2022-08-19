@@ -35,7 +35,7 @@ function Login(){
             placeholder="Enter your email"
             onChange={e => setEmail(e.target.value)}/>
 
-            <button type="submit" id="sub_butt">Login</button>
+            <button type="submit" className="sub_butt">Login</button>
         </form>
       </div>
       <div className="right-side">
